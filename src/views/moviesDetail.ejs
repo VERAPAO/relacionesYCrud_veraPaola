@@ -9,7 +9,7 @@
 </head>
 <body>
     <figure>
-        <img src="/img/logo-DH.png" alt="Logo Digital House">
+        <a href="/movies"><img src="/img/logo-DH.png" alt="Logo Digital House"></a>
     </figure>
     <h1><%= movie.title %> </h1>    
     <br>
@@ -17,6 +17,6 @@
     <p>AWARDS: <%= movie.awards %> </p>
     <p>LENGTH: <%= movie.length + ' min'%> </p>
     <p>RELEASE DATE: <%= movie.release_date %> </p>
-
+    <div style="margin-top: 20px; display: flex; flex-direction: row; gap: 10px;"><button style="width: 80px; font-size: 1rem; background-color: #98FB98; border-radius: 5px; height: 30px; border: 1px solid gray;"><a style="color: black; text-decoration: none;" href= "/movies/edit/<%= movie.id%>">Editar</a></button><button style="width: 80px; font-size: 1rem; background-color: #D3D3D3; border-radius: 5px; height: 30px; border: 1px solid gray;"><a style="color: black; text-decoration: none;" href= "/movies/delete/<%= movie.id%>">Eliminar</a></button></div>
 </body>
 </html>
